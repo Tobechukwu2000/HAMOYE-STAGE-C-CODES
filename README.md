@@ -15,6 +15,6 @@ Dependent variables:
 
 'stab': the maximum real part of the characteristic differential equation root (if positive, the system is linearly unstable; if negative, linearly stable);
 'stabf': a categorical (binary) label ('stable' or 'unstable').
-Because of the direct relationship between 'stab' and 'stabf' ('stabf' = 'stable' if 'stab' <= 0, 'unstable' otherwise), 'stab' should be dropped and 'stabf' will remain as the sole dependent variable (binary classification).
+Because of the direct relationship between 'stab' and 'stabf' ('stabf' = 'stable' if 'stab' <= 0, 'unstable' otherwise), 'stab' was dropped and 'stabf' remained as the sole dependent variable (binary classification).
 
-Split the data into an 80-20 train-test split with a random state of “1”. Use the standard scaler to transform the train set (x_train, y_train) and the test set (x_test). Use scikit learn to train a random forest and extra trees classifier. And use xgboost and lightgbm to train an extreme boosting model and a light gradient boosting model. Use random_state = 1 for training all models and evaluate on the test set
+The data was split into an 80-20 train-test split with a random state of “1”. Standard scaler was used to transform the train set (x_train, y_train) and the test set (x_test). Scikit learn was used to train a random forest and extra trees classifier. Xgboost and lightgbm was used to train an extreme boosting model and a light gradient boosting model. random_state = 1 was used for training all models and evaluate on the test set.
